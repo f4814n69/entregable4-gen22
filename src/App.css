@@ -1,0 +1,70 @@
+.app_form {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0003;
+  backdrop-filter: blur(2px);
+  transform: scale(0);
+  transition: transform 200ms ease;
+}
+.app_form-visible {
+  transform: scale(1);
+}
+.form {
+  padding: 1.2em;
+  width: 100%;
+  max-width: 350px;
+  background-color: white;
+  height: max-content;
+  border-radius: 0.7em;
+  position: relative;
+}
+.form_title {
+  font-size: 1.5em;
+  margin-bottom: 0.6em;
+}
+.form_x {
+position: absolute;
+right: 1.5em;
+top: 1em;
+font-size: 1.2rem;
+color: red;
+cursor: pointer;
+transition: transform 100ms ease;
+}
+.form_x:hover {
+  transform: scale(1.2);
+}
+.form_item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-bottom: 0.8em;
+}
+.form_label {
+  color: rgb(54, 53, 53);
+  padding-left: 1em;
+}
+.form_input {
+  padding: 0.4em 0.8em;
+  font-family: inherit;
+}
+.form_btn {
+  width: 100%;
+  padding: 0.8em;
+  background-color: #555A88;
+  color: white;
+  cursor: pointer;
+}
+.app_btn-form {
+  width: 100px;
+  padding: 0.8em;
+  background-color: #555A88;
+  color: white;
+  cursor: pointer;
+}
